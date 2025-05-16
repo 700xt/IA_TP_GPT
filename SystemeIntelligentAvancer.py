@@ -43,3 +43,6 @@ modele = MLPClassifier(hidden_layer_sizes=(15,), max_iter=1000, random_state=42)
 #Question 6 : Entrainement
 
 modele.fit(X_train,y_train)
+
+# Question 7 : Affichage le nombre d'époques
+print(f"Convergence en {modele.niter} époques")
