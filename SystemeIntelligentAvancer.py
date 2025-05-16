@@ -44,5 +44,5 @@ modele = MLPClassifier(hidden_layer_sizes=(15,), max_iter=1000, random_state=42)
 
 modele.fit(X_train,y_train)
 
-# Question 7 : Affichage le nombre d'époques
-print(f"Convergence en {modele.niter} époques")
+# Question 7 : Affichage le nombre d'époques (42)
+print(f"Convergence en {modele.n_iter_} époques")
