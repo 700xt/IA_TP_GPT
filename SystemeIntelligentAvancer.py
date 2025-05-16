@@ -38,5 +38,8 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 #Question 5 : Instancier un réseau de neurone
 
-# Création du réseau
 modele = MLPClassifier(hidden_layer_sizes=(15,), max_iter=1000, random_state=42)
+
+#Question 6 : Entrainement
+
+modele.fit(X_train,y_train)
