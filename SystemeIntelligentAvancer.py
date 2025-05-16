@@ -26,9 +26,12 @@ for couple in X:
     produit = x * y_val
 #Vérifie la parité
     if produit % 2 == 1:
-        y.append(1)  # impair
+        y.append(1)
     else:
-        y.append(0)  # pair
+        y.append(0)
 
 #Convertir en tableau numpy
 y = np.array(y)
+
+#Question 4 : Séparation ensemble de test et d'entrainement
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
