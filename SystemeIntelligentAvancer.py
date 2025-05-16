@@ -61,6 +61,9 @@ y_pred = modele.predict(X_test)
 accuracy = accuracy_score(y_test,y_pred)
 print(f"Exactitude : {accuracy:.2f}")
 
+# Question 10 : Afficher les 10 premier élément des valeurs prédites et des vérités terrain
+print("Valeurs prédites :", y_pred[:10])
+print("Vérités terrain  :", y_test[:10])
 
 
 
