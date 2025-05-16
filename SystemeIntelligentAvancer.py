@@ -46,3 +46,6 @@ modele.fit(X_train,y_train)
 
 # Question 7 : Affichage le nombre d'époques (42)
 print(f"Convergence en {modele.n_iter_} époques")
+
+# Question 8 : Evaluation du réseau de neurone sur l'ensemble de test
+y_pred = modele.predict(X_test)
